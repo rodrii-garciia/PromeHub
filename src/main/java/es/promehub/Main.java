@@ -3,6 +3,7 @@ package es.promehub;
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 import java.io.IOException;
@@ -14,10 +15,16 @@ public class Main extends Application {
 
     @Override
     public void start(Stage stage) throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("main.fxml"));
-        Scene scene = new Scene(fxmlLoader.load(), 320, 240);
-        stage.setTitle("Hello!");
+        FXMLLoader fxmlLoader = new FXMLLoader(Main.class.getResource("csv_conversor.fxml"));
+        Scene scene = new Scene(fxmlLoader.load(), 600, 400);
+        stage.setTitle("File conversor");
         stage.setScene(scene);
         stage.show();
+
+        Image icon = new Image(
+                getClass().getResourceAsStream("/es/promehub/img/conversor.png")
+        );
+
+        stage.getIcons().add(icon);
     }
 }

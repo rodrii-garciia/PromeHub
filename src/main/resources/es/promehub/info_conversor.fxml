@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="contenido" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/26" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.promehub.controllers.InfoConversorController">
+   <children>
+      <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="600.0" style="-fx-background-color: blue; -fx-font-weight: 200px;">
+         <children>
+            <Label alignment="CENTER_RIGHT" prefHeight="24.0" prefWidth="112.0" style="-fx-font-weight: bold;" text="Conversor" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="20.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets left="20.0" />
+               </opaqueInsets>
+            </Label>
+         </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+      </HBox>
+      <HBox prefHeight="27.0" prefWidth="600.0" style="-fx-background-color: #6495ED;">
+         <opaqueInsets>
+            <Insets top="1.0" />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets top="1.0" />
+         </VBox.margin>
+         <children>
+            <Button mnemonicParsing="false" onAction="#mostrarVistaCSV" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #6495ED;" text="CSV" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="12.0" />
+               </font>
+               <rotationAxis>
+                  <Point3D />
+               </rotationAxis>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#mostrarVistaXML" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #6495ED;" text="XML" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#mostrarVistaCatalog" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #6495ED;" text="CATALOG" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="12.0" />
+               </font>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: blue;" text="INFO" textFill="WHITE">
+               <font>
+                  <Font name="Franklin Gothic Medium" size="12.0" />
+               </font>
+            </Button>
+         </children>
+      </HBox>
+      <VBox alignment="TOP_CENTER" prefHeight="338.0" prefWidth="600.0" />
+   </children>
+</VBox>
