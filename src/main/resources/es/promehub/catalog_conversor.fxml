@@ -11,16 +11,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<VBox maxHeight="-Infinity"
-      maxWidth="-Infinity"
-      minHeight="-Infinity"
-      minWidth="-Infinity"
-      prefHeight="400.0"
-      prefWidth="600.0"
-      xmlns="http://javafx.com/javafx/26"
-      xmlns:fx="http://javafx.com/fxml/1"
-      fx:id="contenido"
-      fx:controller="es.promehub.controllers.CatalogConversorController">
+<VBox fx:id="contenido" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.promehub.controllers.CatalogConversorController">
    <children>
       <HBox alignment="CENTER_LEFT" prefHeight="35.0" prefWidth="600.0" style="-fx-background-color: blue; -fx-font-weight: 200px;">
          <children>
@@ -45,7 +36,7 @@
             <Insets top="1.0" />
          </VBox.margin>
          <children>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #6495ED;" text="CSV" textFill="WHITE" onAction="#mostrarVistaCSV">
+            <Button mnemonicParsing="false" onAction="#mostrarVistaCSV" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #6495ED;" text="CSV" textFill="WHITE">
                <font>
                   <Font name="Franklin Gothic Medium" size="12.0" />
                </font>
@@ -53,7 +44,7 @@
                   <Point3D />
                </rotationAxis>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #6495ED;" text="XML" textFill="WHITE" onAction="#mostrarVistaXML">
+            <Button mnemonicParsing="false" onAction="#mostrarVistaXML" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #6495ED;" text="XML" textFill="WHITE">
                <font>
                   <Font name="Franklin Gothic Medium" size="12.0" />
                </font>
@@ -63,7 +54,7 @@
                   <Font name="Franklin Gothic Medium" size="12.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #6495ED;" text="INFO" textFill="WHITE" onAction="#mostrarVistaInfo">
+            <Button mnemonicParsing="false" onAction="#mostrarVistaInfo" prefHeight="25.0" prefWidth="150.0" style="-fx-background-color: #6495ED;" text="INFO" textFill="WHITE">
                <font>
                   <Font name="Franklin Gothic Medium" size="12.0" />
                </font>
@@ -74,12 +65,15 @@
          <children>
             <HBox alignment="CENTER_LEFT" prefHeight="37.0" prefWidth="600.0">
                <children>
-                  <TextField prefHeight="27.0" prefWidth="471.0" promptText="Search for videogames...">
+                  <TextField fx:id="buscador" prefHeight="27.0" prefWidth="471.0" promptText="Search for videogames...">
                      <HBox.margin>
                         <Insets left="10.0" />
                      </HBox.margin>
+                     <font>
+                        <Font name="Franklin Gothic Medium" size="15.0" />
+                     </font>
                   </TextField>
-                  <Button mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: blue;" text="Search" textFill="WHITE">
+                  <Button fx:id="btnBorrar" onAction="#borrarContenido" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: blue;" text="Drop" textFill="WHITE">
                      <HBox.margin>
                         <Insets left="10.0" right="10.0" />
                      </HBox.margin>
@@ -89,15 +83,15 @@
                   </Button>
                </children>
             </HBox>
-            <TableView prefHeight="314.0" prefWidth="600.0">
+            <TableView fx:id="tabla" prefHeight="314.0" prefWidth="600.0">
               <columns>
-                <TableColumn prefWidth="48.0" text="ID" />
-                <TableColumn prefWidth="126.0" text="Title" />
-                  <TableColumn prefWidth="77.0" text="Platform" />
-                  <TableColumn prefWidth="110.0" text="Genre" />
-                  <TableColumn prefWidth="83.0" text="Price" />
-                  <TableColumn prefWidth="63.0" text="Stock" />
-                  <TableColumn prefWidth="92.0" text="Vendor code" />
+                <TableColumn fx:id="colId" prefWidth="48.0" text="ID" />
+                <TableColumn fx:id="colTitulo" prefWidth="126.0" text="Title" />
+                  <TableColumn fx:id="colPlataforma" prefWidth="77.0" text="Platform" />
+                  <TableColumn fx:id="colGenero" prefWidth="110.0" text="Genre" />
+                  <TableColumn fx:id="colPrecio" prefWidth="83.0" text="Price" />
+                  <TableColumn fx:id="colStock" prefWidth="63.0" text="Stock" />
+                  <TableColumn fx:id="colCodProveedor" prefWidth="92.0" text="Vendor code" />
               </columns>
             </TableView>
          </children>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="187.0" prefWidth="405.0" style="-fx-background-color: blue;" xmlns="http://javafx.com/javafx/25" xmlns:fx="http://javafx.com/fxml/1" fx:controller="es.promehub.controllers.FileCardController">
+
+   <children>
+      <VBox layoutX="8.0" layoutY="8.0" prefHeight="161.0" prefWidth="390.0" spacing="10.0" style="-fx-background-color: white;">
+         <children>
+            <Label fx:id="nomArchivo" prefHeight="62.0" prefWidth="585.0" text="nombre del archivo">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </padding>
+               <font>
+                  <Font name="Franklin Gothic Medium" size="20.0" />
+               </font>
+            </Label>
+            <Label fx:id="tamanyo" prefHeight="20.0" prefWidth="585.0" text="Tamaño:">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <font>
+                  <Font name="Franklin Gothic Medium" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="ruta" prefHeight="20.0" prefWidth="585.0" text="Ruta:">
+               <padding>
+                  <Insets left="20.0" />
+               </padding>
+               <font>
+                  <Font name="Franklin Gothic Medium" size="15.0" />
+               </font>
+            </Label>
+            <Label fx:id="estado" prefHeight="20.0" prefWidth="585.0" text="Estado:">
+               <padding>
+                  <Insets left="20.0" bottom="20"/>
+               </padding>
+               <font>
+                  <Font name="Franklin Gothic Medium" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+   </children>
+</Pane>

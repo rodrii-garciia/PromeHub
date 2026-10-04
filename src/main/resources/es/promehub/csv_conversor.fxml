@@ -71,7 +71,7 @@
       </HBox>
       <VBox alignment="TOP_CENTER" prefHeight="338.0" prefWidth="600.0">
          <children>
-            <ImageView fitHeight="64.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="64.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#cargarCSV">
                <image>
                   <Image url="@img/upload.png" />
                </image>
@@ -79,7 +79,7 @@
                   <Insets top="80.0" />
                </VBox.margin>
             </ImageView>
-            <Label prefHeight="24.0" prefWidth="131.0" text="Upload CSV file">
+            <Label prefHeight="24.0" prefWidth="131.0" text="Upload CSV file" onMouseClicked="#cargarCSV">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
@@ -95,7 +95,7 @@
                   <Insets top="30.0" />
                </VBox.margin>
             </Label>
-            <Button mnemonicParsing="false" prefHeight="28.0" prefWidth="179.0" style="-fx-background-color: blue;" text="Export data to CSV" textFill="WHITE">
+            <Button mnemonicParsing="false" prefHeight="28.0" prefWidth="179.0" style="-fx-background-color: blue;" text="Export data to CSV" textFill="WHITE" onAction="#exportarCSV">
                <VBox.margin>
                   <Insets top="30.0" />
                </VBox.margin>

@@ -71,7 +71,7 @@
       </HBox>
       <VBox alignment="TOP_CENTER" prefHeight="338.0" prefWidth="600.0">
          <children>
-            <ImageView fitHeight="64.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+            <ImageView fitHeight="64.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true" onMouseClicked="#cargarXML">
                <image>
                   <Image url="@img/upload.png" />
                </image>
@@ -79,7 +79,7 @@
                   <Insets top="80.0" />
                </VBox.margin>
             </ImageView>
-            <Label prefHeight="24.0" prefWidth="135.0" text="Upload XML file">
+            <Label prefHeight="24.0" prefWidth="135.0" text="Upload XML file" onMouseClicked="#cargarXML">
                <VBox.margin>
                   <Insets top="10.0" />
                </VBox.margin>
@@ -95,7 +95,7 @@
                   <Insets top="30.0" />
                </VBox.margin>
             </Label>
-            <Button mnemonicParsing="false" prefHeight="28.0" prefWidth="179.0" style="-fx-background-color: blue;" text="Export data to XML" textFill="WHITE">
+            <Button mnemonicParsing="false" prefHeight="28.0" prefWidth="179.0" style="-fx-background-color: blue;" text="Export data to XML" textFill="WHITE" onMouseClicked="#exportarXML">
                <VBox.margin>
                   <Insets top="30.0" />
                </VBox.margin>

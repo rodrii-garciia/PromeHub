@@ -1,15 +1,31 @@
 package es.promehub.backend;
 
+import jakarta.xml.bind.annotation.*;
+
+@XmlRootElement(name = "videojuego")
+@XmlAccessorType(XmlAccessType.FIELD)
 public class Videojuego {
 
+    @XmlAttribute
     private int id;
+    @XmlElement
     private String titulo;
+
+    @XmlElement
     private String plataforma;
+
+    @XmlElement
     private String genero;
+
+    @XmlElement
     private double precio;
+
+    @XmlElement
     private int stock;
 
+    @XmlTransient
     private String codProveedor;
+
 
     public Videojuego(int id, String titulo, String plataforma, String genero,
                       double precio, int stock, String codProveedor)
