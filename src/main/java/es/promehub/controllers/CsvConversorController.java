@@ -110,7 +110,7 @@ public class CsvConversorController {
 
                         }catch(NumberFormatException e){
 
-                            System.out.println("This CSV has not have the correct format");
+                            System.out.println("This CSV does not have the correct format");
                         }
                     }
 
