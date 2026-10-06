@@ -88,7 +88,7 @@ public class CsvConversorController {
 
                         // validación de atributos para videojuego
                         if (datos.length != 7) {
-                            System.out.println("Invalid register: some atributes are missing");
+                            System.out.println("Invalid register: some attributes are missing");
                             continue;
                         }
 
@@ -116,7 +116,7 @@ public class CsvConversorController {
                     }
 
                     // 7. Informar de los registros procesados.
-                    System.out.println("CSV succesfully loaded. " + contador + " new insertions.");
+                    System.out.println("CSV successfully loaded. " + contador + " new insertions.");
 
                 }catch(IOException e){
                     System.out.println("The file was unable to open");

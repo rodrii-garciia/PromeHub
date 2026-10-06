@@ -87,10 +87,10 @@ public class XmlConversorController {
             marshaller.marshal(catalogo, archivo);
 
             Archivos.archivos.add(archivo);
-            System.out.println("Catalog successfully exported");
+            System.out.println("Catalog successfully exported.");
 
         }catch(JAXBException e){
-            System.out.println("The catalog could not be exported");
+            System.out.println("The catalog could not be exported.");
         }
 
     }

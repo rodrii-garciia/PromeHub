@@ -85,7 +85,7 @@ public class InfoConversorController {
 
             }catch(IOException e){
 
-                System.out.println("The card was unable to create");
+                System.out.println("Unable to create card.");
             }
         }
     }
