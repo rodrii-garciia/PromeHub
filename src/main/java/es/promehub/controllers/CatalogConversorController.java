@@ -34,6 +34,7 @@ public class CatalogConversorController {
     @FXML private TableColumn<Videojuego, Double> colPrecio;
     @FXML private TableColumn<Videojuego, Integer> colStock;
     @FXML private TableColumn<Videojuego, String> colCodProveedor;
+    // fxml transition functions
     @FXML
     public void mostrarVistaCSV() throws IOException {
 

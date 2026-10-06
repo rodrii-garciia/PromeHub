@@ -25,6 +25,7 @@ public class XmlConversorController {
     private static final Catalogo catalogo = DatosApp.catalogo;
 
     @FXML private VBox contenido;
+    // fxml transition functions
     @FXML
     public void mostrarVistaCSV() throws IOException {
 
